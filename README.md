@@ -39,6 +39,7 @@
         对主机点终端，
         http://ip:8088/cmdb/webssh#hostid_1
 
+![](./host.png)
 ![](./ssh.png)
 ![](./top.png)
 ![vi](./vi.png  "vi")
