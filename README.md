@@ -14,6 +14,8 @@ centos6系统应当也可以，以前都开始开发时就是在6上，python最
 搭建：
 1. 导入django MySQL数据库 xyf.sql
 管理员xyf密码为xyf.2017
+登陆地址为django后台 http://ip:8088/admin/
+我的原整个项目登陆地址为http://ip:8088/login，带有手机OPT等其它验证，改得麻烦，所以本webssh应当在/admin/登陆。
 
 2. 安装redis
 REDIS = ['127.0.0.1:6379', 'sdj2017']
