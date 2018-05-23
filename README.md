@@ -40,6 +40,7 @@
         http://ip:8088/cmdb/webssh#hostid_1
 
 ![](./host.png)
+![](./webssh.png)
 ![](./ssh.png)
 ![](./top.png)
 ![vi](./vi.png  "vi")
