@@ -8,8 +8,8 @@
 其它该有的特色都有，比如终端彩色，包括vim等。echo $TERM
 
 环境：
-centos7 python2.7
-centos6也可以，以前都开始开发时就是在6上。
+centos7 python2.7,
+centos6系统应当也可以，以前都开始开发时就是在6上，python最好使用7，用6的话有些str.format()可能带{}报错需为{0}
 
 搭建：
 1. 导入django MySQL数据库 xyf.sql
