@@ -1,0 +1,31 @@
+#!/bin/bash
+
+#!/bin/sh
+#
+
+# cd /kf/web
+gunicorn --workers=4 -b 0.0.0.0:80 web.wsgi
+
+
+
+
+
+
+
+
+
+
+exit
+
+arg1=$1
+
+if [ -z $arg1 ];then
+arg1='test'
+
+fi
+
+
+cd /kf/scrapy
+gunicorn -w 1 -b 0.0.0.0:80 $arg1:app
+
+

@@ -1,0 +1,34 @@
+#!/bin/bash
+
+bakdir="bak"
+
+# path=`dirname "$0"` #脚本目录c
+path="$( cd "$( dirname "$0"  )" && pwd  )" #脚本目录c
+
+base=`dirname "$path"` #sdj路径
+
+prodir=`basename $base`   #目录名sdj
+cd $base #sdj
+cd ../   #../sdj
+
+pwd
+todate=`date +%Y%m%d`
+
+if [ -z "$1" ]; then
+echo "开始备份"
+rm $bakdir/$prodir${todate}.tar.gz -f
+tar czvf $bakdir/$prodir${todate}.tar.gz $prodir/* --exclude=migrations*  --exclude=*.bak  --exclude=*.pyc  --exclude=*.log --exclude=settings.py --exclude=.tags
+
+elif [ "$1" == "x" ];then
+echo "开始解压覆盖（还原/更新）"
+tar xzvf $prodir${todate}.tar.gz
+
+
+elif [ "$1" == "d" ];then
+rm $prodir${todate}.tar.gz -f
+url="http://192.168.80.237:8088/static/bak/$prodir${todate}.tar.gz"
+echo "开始下载"
+wget $url
+
+
+fi

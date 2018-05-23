@@ -1,0 +1,46 @@
+django
+django-bootstrap3
+
+##使用postgresql
+##yum install -y python-devel postgresql-devel
+#psycopg2
+
+##使用mysql
+##yum -y install python-devel mysql-devel
+#mysql-python
+
+https://github.com/darklow/django-suit/tarball/v2
+
+paramiko
+pycrypto
+rsa
+
+
+
+
+
+gunicorn
+futures
+
+
+djangorestframework
+
+rsa
+
+channels
+asgi-redis
+daphne
+
+django_redis
+hiredis
+elasticsearch
+
+## 登陆时增加otp验证
+django_otp
+qrcode
+pillow
+
+pyzabbix
+
+docker
+

@@ -1,0 +1,24 @@
+#!/bin/bash
+
+
+arg1=$1
+arg3=$3
+
+if [ -z "$arg1" ];then
+arg1='8088'
+fi
+
+if [ -z "$arg3" ];then
+arg3='wsgi'
+fi
+
+
+
+
+
+# cd /kf/sdj
+gunicorn --workers=4 -b 0.0.0.0:$arg1 sdj.$arg3 $2 --threads 40 --max-requests 4096 --max-requests-jitter 512
+
+
+#pip install gevent-websocket
+#-k geventwebsocket.gunicorn.workers.GeventWebSocketWorker

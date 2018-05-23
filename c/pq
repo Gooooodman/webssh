@@ -1,0 +1,8 @@
+#!/bin/bash
+
+systemctl restart postgresql-9.6.service
+
+
+#echo $arg1
+#echo $arg2
+
