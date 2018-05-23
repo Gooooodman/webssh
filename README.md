@@ -12,6 +12,7 @@
         centos6系统应当也可以，以前都开始开发时就是在6上，python最好使用7，用6的话有些str.format()可能带{}报错需为{0}
 
 * 搭建：
+        
         1. 导入django MySQL数据库 xyf.sql；
         管理员xyf密码为xyf.2017
         登陆地址为django后台 http://ip:8088/admin/ ;
@@ -25,7 +26,7 @@
                 # "BACKEND": "asgi_ipc.IPCChannelLayer",       #daphne和runworker不在同一服务器时不支持
                 "ROUTING": "webssh.routing.channel_routing",    # 定义channel的根入口
         }
-        使用内存时，很容易超出一定字节数就溢出了。比如ll /bin/
+        使用内存时，很容易超出一定字节数就溢出了。比如ll /bin/。所以生产环境应当用redis或ipc。
 
         3. 安装依赖组件requirements.txt
         有好多不需要，懒得整理了，因为我电脑上都有装，如果删掉一些也不清楚哪有没调用，不愿再用新机来安装测试。
