@@ -33,7 +33,7 @@ run() {
             nohup $p/$f runworker --only-channels=http.* --threads 4 >& worker_2.log & #python单进程只能使用单核CPU
             nohup $p/$f runworker --only-channels=http.* --threads 4 >& worker_3.log & #python单进程只能使用单核CPU
             nohup $p/$f cert 4 >& cert.log &
-            nohup daphne -t 150 -b 0.0.0.0 -p 8088 --ws-protocol "graphql-ws" --proxy-headers sdj.asgi:channel_layer >& daphne.log &
+            nohup daphne -t 150 -b 0.0.0.0 -p 8088 --ws-protocol "graphql-ws" --proxy-headers webssh.asgi:channel_layer >& daphne.log &
             echo "Starting....."
             sleep 1
             ps aux | grep -Ei '(runworker|daphne|runserver 0.0.0.0:8088)' | grep -v 'grep'
