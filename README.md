@@ -4,7 +4,7 @@
 主要程序为cmdb/consumers.py interactive.py二个文件。
 
 * 特色:
-        整个网站都是django，http和websocket在同一端口，不像市面上其它cmdb使用第三方websocket后端。
+        整个网站都是django，http和websocket在同一端口，市面上其它cmdb多数是使用第三方websocket后端。
         其它该有的特色都有，比如终端彩色，包括vim等。echo $TERM
 
 * 环境：
