@@ -3,6 +3,7 @@
 * 1.支持网页SFTP，文本编辑；
 * 2.(增加堡垒机功能)支持软件终端，就是从可从网页直接跳转到xshell终端；当然也同时支持sftp，比如在xshell中点xftp就打开文件sftp管理。
 因为个人习惯还是用xshell方便，网页中少了很多功能，比如不能用快捷键。此功能上月已在公司CMDB系统中开发完成。非常实用！！
+![xshell](./xshell.gif  "xshell")
 # ---------------------  2019.01.04  -----------------------
 # Django webssh
 使用django的channels做为websocket后端
